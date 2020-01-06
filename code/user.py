@@ -33,7 +33,7 @@ class User:
         result = cursor.execute(query,(_id,))
         row = result.fetchone() #fetch one row from the result
         if row is not None:
-            user = cls(row[0],row[1],row[2])git int
+            user = cls(row[0],row[1],row[2])
 
         else:
             user = None
